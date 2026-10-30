@@ -1,0 +1,140 @@
+
+
+
+.hero {
+    // MOBILE FIRST
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 667px;
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 33%;
+        overflow: hidden;
+        img {
+            width: 250%;
+            height: 250%;
+            object-fit: contain;
+            object-position: center;       
+        }
+    }
+    .hero-content{
+        margin: 25px 25px 0px 25px;
+        p{
+            margin-top: 20px;
+        }
+        a{
+            margin-top: 30px;
+            
+        }
+    }
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        height: 700px;
+        width: 100%;
+        .img{
+            
+            height: auto;
+            width: 55%;
+            flex-shrink: 0;
+            min-height: 550px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-position: 0% 0%;
+                
+            }
+        }
+        .hero-content{
+            width: 50%;
+            height: auto;
+            margin-left: -5%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+            padding-right: 20px;
+            align-items: flex-start;
+            position: relative;
+            z-index: 1;
+        
+            p{
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .btn-one{
+                margin-top: 0px;
+                width: 260px;
+              
+                
+            }
+
+
+        }
+    }
+
+    @include desktop{
+        width: 100%;
+        height: 700px;
+        margin-bottom: 50px;
+        background-image:
+            linear-gradient($black, $black),
+            url("../img/hero.svg"),
+            linear-gradient($white, $white);
+
+        background-size:
+            30% 100%,
+            60% 120%,
+            30% 100%;
+
+        background-position:
+            left center,
+            center center,
+            right center;
+
+        background-repeat: no-repeat;
+        .img{
+            display: none;
+        }
+        .hero-content{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            padding: 150px 85px 0px 85px;
+            justify-content: space-between;
+            .hero_title{
+                width: 519px;
+                color: $white;
+                
+            }
+            .hero_text{
+                p{
+                    margin: 0px;
+                    width: 350px;
+                    margin-bottom: 80px;
+                }
+                .btn-one{
+                    width: 260px;
+                }
+                .btn-one__text{
+                    font-weight: bolder;
+                    letter-spacing: 2px;
+                    
+                }
+                
+            }
+            
+        }
+    }
+
+
+}
+
+
+    

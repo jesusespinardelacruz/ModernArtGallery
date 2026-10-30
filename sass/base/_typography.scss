@@ -1,0 +1,120 @@
+
+
+/* H1 */
+h1 {
+    // MÓVIL
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 900;
+    font-family: $primary-font;
+    text-transform: uppercase;  
+    margin: 0;
+
+    // TABLET
+    @include tablet {
+        font-size: 70px;
+        line-height: 0.9;
+        
+    }
+
+    // DESKTOP
+    @include desktop {
+        font-size: 96px;
+        line-height: 1;
+        
+    }
+
+    // DESKTOP XL
+    @include desktop-xl {
+        font-size: 98px;
+        line-height: 88px;
+        
+    }
+}
+
+h2{
+    // MÓVIL
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: 900;
+    line-height: 0.9;
+    font-family: $primary-font;
+    text-transform: uppercase;  
+    margin: 0;
+
+    // TABLET
+    @include tablet {
+        font-size: 50px;
+        line-height: 0.9;
+        
+    }
+
+    // DESKTOP
+    @include desktop {
+        font-size: 60px;
+        line-height: 60px;
+        
+    }
+
+    // DESKTOP XL
+    @include desktop-xl {
+        font-size: 88px;
+        line-height: 78px;
+        
+    }
+}
+
+h3{
+    // MÓVIL
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 900;
+    line-height: 0.9;
+    font-family: $primary-font;
+    text-transform: uppercase;  
+    margin: 0;
+
+    // TABLET
+    @include tablet {
+        font-size: 40px;
+        line-height: 40px;
+        
+    }
+
+    // DESKTOP
+    @include desktop {
+        font-size: 50px;
+        line-height: 60px;
+        
+    }
+
+    // DESKTOP XL
+    @include desktop-xl {
+        font-size: 60px;
+        line-height: 78px;
+        
+    }
+}
+
+
+/* P */
+
+p{
+    font-family: $secondary-font;
+    color: $grey;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+
+    // TABLET Y SUPERIORES
+
+    @include tablet{
+        font-size: 18px;
+        line-height: 1.50;
+    }
+    @include desktop{
+        font-size: 22px;
+        line-height: 1.50;
+    }
+
+}
